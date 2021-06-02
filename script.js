@@ -10,6 +10,6 @@ function verarmas(armas){
 	for(var i=0;i<armas.length;i++){
 		html += "<tr><td>"+armas[i].nome+"</td>"
 		html += "<td>"+armas[i].dano+"</td>"
-		html += "<td>"+armas[i].roll+"</td>"
+		html += "<td>"+armas[i].roll+"</td></tr>"
 	}
 }
