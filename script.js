@@ -1,15 +1,15 @@
-var vidaAtual = 10
-var vidaMax = 10
-var vida = [vidaAtual,vidaMax]
-danos(vida)
+var soco = {nome:'Soco',dano:'?',roll:'?'}
+var pistola = {nome:'Desert Eagle',dano:'?',roll:'?'}
 
-function danos(vida){
-var = html= ""
-	html += "<tr><td>Soco</td>"
-	html += "<td>?</td>"
-	html += "<td><button onClick='soco()'>ROLL</button></td></tr>"
-	
-	
-	 var tabeladanos = document.getElementById("tabeladanos")
-  tabeladanos.innerHTML = html
+
+var armas = [soco, pistola]
+verarmas(armas)
+
+function verarmas(armas){
+	var html = ""
+	for(var i=0;i<armas.length;i++){
+		html += "<tr><td>"+armas[i].nome+"</td>"
+		html += "<td>"+armas[i].dano+"</td>"
+		html += "<td>"+armas[i].roll+"</td>"
+	}
 }
